@@ -179,33 +179,6 @@
   style="width:160px; margin-top:10px; border-radius:10px;">
 </footer>
 
-<script>
-const products = ["tedhe-medhe", "bourbon", "dark-fantasy-chocolate", "dark-fantasy-vanilla", "mad-angles-achaari", "mad-angles-peri"];
-
-function updateUI() {
-  products.forEach(p => {
-    const status = localStorage.getItem(p) || "In Stock";
-    const el = document.getElementById(p + "-stock");
-    el.innerText = status;
-
-    if (status === "Out of Stock") {
-      el.style.color = "#ef4444";
-    } else if (status === "Limited") {
-      el.style.color = "#facc15";
-    } else {
-      el.style.color = "#22c55e";
-    }
-  });
-}
-
-function setStatus(product, status) {
-  localStorage.setItem(product, status);
-  updateUI();
-}
-
-updateUI();
-</script>
-
 </body>
 </html>
 
