@@ -53,6 +53,11 @@
       border-radius: 6px;
     }
 
+    .align{
+      display:flex;
+      flex-direction:column;
+    }
+
     .product img {
       width: 100%;
       height: 180px;
@@ -118,8 +123,10 @@
     <img src="tedhe-medhe.jpeg" alt="Tedhe Medhe" />
     <h2>Tedhe Medhe</h2>
     <p>Spicy and Crunchy</p>
-    <p class="strike">₹20</p>
-    <div class="price">₹14</div>
+    <div class="align">
+      <div class="price">₹14</div>
+      <p class="strike">₹20</p>
+    </div>
     <div class="stock" id="tedhe-medhe-stock"></div>
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Tedhe%20Medhe">Order on WhatsApp</a>
   </div>
