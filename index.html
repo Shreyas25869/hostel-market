@@ -94,6 +94,36 @@
       color: #facc15;
       margin-bottom: 10px;
     }
+    .qty-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    
+    .qty-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #1f2933;
+      color: #e5e7eb;
+    }
+    
+    .qty-btn:hover {
+      background: #374151;
+    }
+    
+    .qty {
+      font-size: 16px;
+      font-weight: bold;
+      min-width: 20px;
+      text-align: center;
+    }
 
     .btn {
       display: block;
@@ -115,6 +145,26 @@
     }
   </style>
 </head>
+<script>
+  function changeQty(button, change) {
+    const product = button.closest(".product");
+    const qtySpan = product.querySelector(".qty");
+    let qty = parseInt(qtySpan.innerText);
+
+    qty += change;
+    if (qty < 1) qty = 1;
+
+    qtySpan.innerText = qty;
+
+    // Update WhatsApp link
+    const productName = product.querySelector("h2").innerText;
+    const orderBtn = product.querySelector(".btn");
+
+    orderBtn.href =
+      "https://wa.me/919519171931?text=" +
+      encodeURIComponent(`I want to order ${qty} x ${productName}`);
+  }
+</script>
 <body>
 
 <header>
@@ -136,6 +186,12 @@
       <span class="offer">(30% OFF)</span>
     </div>
     <div class="stock" id="tedhe-medhe-stock"></div>
+    <div class="qty-box">
+      <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+      <span class="qty">1</span>
+      <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+    </div>
+
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Tedhe%20Medhe">Order on WhatsApp</a>
   </div>
 
