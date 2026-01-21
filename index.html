@@ -9,11 +9,18 @@
   <meta name="theme-color" content="#0f172a" />
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header>
-  <h1>Hostel Mini Shop</h1>
+  <div class="cart">
+    <h1>Hostel Mini Shop</h1>
+    <div class="cart-header">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Cart (<span id="cart-count">0</span>)
+    </div>
+  </div>
   <p>Room No. 106 | Open: 6 PM – 4 AM<br>Contact: 9519171931, 7217441564</p>
 </header>
 
@@ -22,7 +29,7 @@
   <!-- Product 1 -->
   <div class="product" data-product="tedhe-medhe">
     <span class="badge">Best Seller</span>
-    <img src="tedhe-medhe.jpeg" alt="Tedhe Medhe" />
+    <img src="tedhe-medhe-removebg-preview.png" alt="Tedhe Medhe" />
     <h2>Tedhe Medhe</h2>
     <p>Spicy and Crunchy</p>
     <div class="price-row">
@@ -41,13 +48,15 @@
       <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
     </div>
     <br>
+    <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    <br>
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Tedhe%20Medhe">Order on WhatsApp</a>
   </div>
 
   <!-- Product 2 -->
   <div class="product" data-product="bourbon">
     <span class="badge">Best Seller</span>
-    <img src="Bourbon.jpeg" alt="Bourbon" />
+    <img src="Bourbon-removebg-preview.png" alt="Bourbon" />
     <h2>Bourbon</h2>
     <p>Perfect late-night snack.</p>
     <div class="price-row">
@@ -66,13 +75,15 @@
       <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
     </div>
     <br>
+    <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    <br>
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Bourbon">Order on WhatsApp</a>
   </div>
 
   <!-- Product 3 -->
   <div class="product" data-product="dark-fantasy-chocolate">
     <span class="badge">Hot Deal</span>
-    <img src="Dark Fantasy Chocolate.jpeg" alt="Chocolate" />
+    <img src="Dark_Fantasy_Chocolate-removebg-preview.png" alt="Chocolate" />
     <h2>Dark Fantasy Chocolate</h2>
     <p>Sweet cravings solved.</p>
     <div class="price-row">
@@ -90,6 +101,8 @@
       <span class="qty">1</span>
       <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
     </div>
+    <br>
+    <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
     <br>
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Dark%20Fantasy">Order on WhatsApp</a>
   </div>
@@ -116,13 +129,15 @@
       <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
     </div>
     <br>
+    <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    <br>
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Dark%20Fantasy">Order on WhatsApp</a>
   </div>
 
   <!-- Product 5 -->
   <div class="product" data-product="mad-angles-achaari">
     <span class="badge">Hot Deal</span>
-    <img src="Mad Angles Achaari.jpeg" alt="Mad Angles" />
+    <img src="Mad_Angles_Achaari-removebg-preview.png" alt="Mad Angles" />
     <h2>Mad Angles Achaari Masti</h2>
     <p>Spicy cravings solved.</p>
     <div class="price-row">
@@ -141,13 +156,15 @@
       <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
     </div>
     <br>
+    <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    <br>
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Mad%20Angles">Order on WhatsApp</a>
   </div>
 
   <!-- Product 6 -->
   <div class="product" data-product="mad-angles-peri">
     <span class="badge">Hot Deal</span>
-    <img src="Mad Angles Peri Peri.jpeg" alt="Mad Angles" />
+    <img src="Mad_Angles_Peri_Peri-removebg-preview.png" alt="Mad Angles" />
     <h2>Mad Angles Peri Peri</h2>
     <p>Spicy cravings solved.</p>
     <div class="price-row">
@@ -165,6 +182,8 @@
       <span class="qty">1</span>
       <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
     </div>
+    <br>
+    <button class="cart-btn" onclick="addToCart(this)">Add to Cart</button>
     <br>
     <a class="btn" href="https://wa.me/919519171931?text=I%20want%20to%20order%20Mad%20Angles">Order on WhatsApp</a>
   </div>
