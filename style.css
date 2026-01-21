@@ -82,6 +82,7 @@ header p {
   height: 180px;
   object-fit: contain;
   border-radius: 10px;
+  background-color: #2f3034;
 }
 
 .product h2 {
