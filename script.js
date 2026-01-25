@@ -28,16 +28,27 @@ function addToCart(btn) {
   const name = product.querySelector("h2").innerText;
   const price = product.querySelector(".new-price").innerText;
   const qty = product.querySelector(".qty").innerText;
+  const image = product.querySelector("img").src;
+  const alt = product.querySelector("img").alt;
 
-  cart.push({ name, price, qty });
+  cart.push({ name, price, qty, image, alt});
 
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
 
-  btn.innerText = "Added ✔";
-  setTimeout(() => btn.innerText = "Add to Cart", 1000);
+  btn.style.display = "none";
 }
 
 function updateCartCount() {
   document.getElementById("cart-count").innerText = cart.length;
+}
+
+function searchItems() {
+  const input = document.getElementById("searchBox").value.toLowerCase();
+  const items = document.querySelectorAll(".product"); // product class
+
+  items.forEach(item => {
+    const name = item.querySelector("h2").innerText.toLowerCase();
+    item.style.display = name.includes(input) ? "block" : "none";
+  });
 }
