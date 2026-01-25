@@ -62,3 +62,25 @@ function searchItems() {
   document.getElementById("noResult").style.display =
     found || input === "" ? "none" : "block";
 }
+
+const toggleBtn = document.getElementById("themeToggle");
+const icon = toggleBtn.querySelector("i");
+
+// 🌑 Default DARK
+document.body.classList.remove("light");
+
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light");
+  icon.classList.remove("fa-sun");
+  icon.classList.add("fa-moon");
+}
+
+toggleBtn.addEventListener("click", () => {
+  const isLight = document.body.classList.toggle("light");
+
+  icon.classList.toggle("fa-moon", isLight);
+  icon.classList.toggle("fa-sun", !isLight);
+
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+});

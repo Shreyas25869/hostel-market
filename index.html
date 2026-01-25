@@ -7,7 +7,7 @@
 
     <!-- PWA Meta -->
     <meta name="theme-color" content="#0f172a" />
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -23,6 +23,9 @@
           Cart (<span id="cart-count">0</span>)
         </div>
       </div>
+      <button id="themeToggle" class="theme-btn">
+        <i class="fa-solid fa-sun"></i>
+      </button>
       <p>
         Room No. 106 | Open: 6 PM – 4 AM<br />Contact: 9519171931, 7217441564
       </p>
@@ -41,7 +44,13 @@
     <div class="container">
       <p
         id="noResult"
-        style="display: none; text-align: center; margin-top: 50px; margin-bottom: 50px; font-size: 30px;"
+        style="
+          display: none;
+          text-align: center;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          font-size: 30px;
+        "
       >
         Searched item is not available
       </p>
