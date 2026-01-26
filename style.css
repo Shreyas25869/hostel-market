@@ -243,6 +243,11 @@ footer {
   cursor: pointer;
   font-size: 16px;
   z-index: 1000;
+  transition: transform 0.4s ease, background 0.3s ease;
+}
+
+.theme-btn.rotate {
+  transform: rotate(180deg);
 }
 
 /* ☀️ LIGHT MODE */
