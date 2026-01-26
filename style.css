@@ -304,3 +304,12 @@ body.light .note-box:focus {
 body.light .cart-header{
   background-color: #fec66c;
 }
+
+body.light .qty-btn{
+  background-color: #2e3847;
+  color: white;
+}
+
+body.light .qty-btn:hover {
+  background: #0f172a;
+}
