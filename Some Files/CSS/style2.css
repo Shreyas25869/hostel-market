@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+#head{
+    background-color: yellow;
+}
+
+.one{
+    font-size: 34px;
+}
+
+.two{
+    color: black;
+}
+
+.three{
+    height: 100px;
+}

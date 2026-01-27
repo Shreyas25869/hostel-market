@@ -1,0 +1,84 @@
+/* h1{
+    color:rgb(7, 99, 5);
+}
+
+p{
+    color:black;
+}
+
+button{
+    color:rgb(11, 238, 18);
+}
+
+body{
+    background-color:#00ff40;
+}
+
+button{
+    background-color: chocolate;
+}
+
+#headingOne{
+    color: yellow;
+}
+
+#headingTwo{
+    color:chocolate;
+}
+
+.myClass{
+    color:magenta;
+} */
+
+/* p{
+    text-align: end;
+} */
+
+/* h1{
+    text-align: center;
+    text-decoration: blue dotted underline;
+} */
+
+/* a{
+    text-decoration: none;
+}
+
+#h1{
+    /* font-weight: bolder; 
+    font-weight: 100;
+}
+
+#h2{
+    font-weight: 400;
+}
+
+#h3{
+    font-weight: 600;
+}
+
+#h4{
+    font-weight: 900;
+}
+
+#one{
+    font-family: Arial, Helvetica, sans-serif;
+    /*if one font is not available in the browser than another one is applied thats the use of writting more than one font this is called fall back mechanism
+}
+
+#two{
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+#one{
+    font-size: 25px;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#two{
+    font-size: 20px;
+}
+
+#three{
+    font-size: 10px;
+}

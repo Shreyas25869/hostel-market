@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: inline;
+    height: 200vh;
+}
+
+header{
+    padding: 25px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    display: flex;
+    padding: 0 53px;
+    font-size: 2vw;
+    padding: 0 13px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    min-height: 2333px;
+    background-color: red;
+}

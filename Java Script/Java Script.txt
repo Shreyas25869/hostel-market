@@ -1,0 +1,421 @@
+                                  JAVA SCRIPT
+
+
+Input(code) ---> Computer ---> Output
+
+First JS Code
+console.log("Hello World")
+
+1. To connect JS with Browser we need to create a html file
+2. variable name same as python.
+3. We can store any type of value in any variable.
+4.  SF6 update of JS have introduced var and const keyword.
+var ---> variable can be re-declared and updated. A global scope variable.
+Let ---> variable cannot be re-declared but can be updated. A block scope variable.
+Const ---> variable cannot be re-declared and updated . A block scope variable.
+5. Const has to be declared with a value otherwise error will come.
+6. Var can be declared without a value this will give undefined as output.
+7. Code written in a {} curly bracket is called one Block of code.
+like:
+      {
+        let a = 5;
+        console.log(a)
+      }
+Data Types JS
+Number, String, Boolean, Undefined, Null, Big Int, Symbol
+
+  Two types of data types:
+  1. Primitive Data Types (7 Parts)
+  2. Non Primitive Data Types (eg: Objects)
+   Objects ---> Collection of values
+
+8. const object ke keys mein change kar sakte hain usme error nahi ati.
+
+typeof [const variable] will give type of variable
+objects have key:value pair like dictionary in python
+we can code it like:
+                    |const student={              |
+                    |   fullName: "Hiten Ranjan", |
+                    |   age: 24,                  |
+                    |   cgpa:9,                   |
+                    |    isPass:True,             |
+                    | };                          |
+
+Comments in JS
+// ---> for single line comments
+/* This is multiline
+   comments. */
+
+Operators in JS 
+Arithmetic Operator
++,-,*,/
+
+Binary Operator
+.Modulus --> %
+.Exponents ---> **
+
+Unary Operator
+
+.Increment ---> ++ 
+post increment --> a++ first they will print the value and then they will change the value from the next line.
+pre increment --> ++a first they will change the value and then they will print the value in the same line.
+
+.Decrement ---> --
+post decrement ---> a-- first they will print the value then they will print the new value I  the next line.
+pre decrement ---> --a first they will change the value then they will print the value  from the same line.
+
+ASSIGNMENT OPERATORS
+=, +=, -=, /=, *= , %=
+
+a+=4 means a=a+4
+* (just like python)
+
+CONDITIONAL OPERATORS
+
+equal to --> ==
+equal to & type ---> === (strict version of equal to)
+Not equal to --> !=
+Not equal to & type--> !==
+
+>,<,<=,>=
+
+LOGICAL OPERATORS
+
+Logical AND &&
+Logical OR ||
+Logical NOT !
+
+result for && |T|T|T
+              |T|F|F
+              |F|T|F <---RESULT
+              |F|F|F
+
+CONDITIONAL STATEMENT
+
+if STATEMENT (just like python)
+
+let color;
+if (mode === "dark mode"){
+      color = "black";
+}
+
+if-else STATEMENT
+
+let color;
+if (mode === "dark-mode"){
+     color = "black";
+} else {
+    color = "white";
+}
+
+else-if STATEMENT
+
+if(age < 18){
+    console.log("junior");
+} else if (age > 60){
+    console.log("senior");
+} else {
+    console.log("middle");
+}
+
+* one line statement
+
+if (mode === "dark") console.log(mode) ;
+
+Ternary Operators
+
+condition ? true output : false output (simpler, compact if-else)
+* but you have to save this output some where or else it will print nothing.
+
+LOOPS IN JS
+
+for Loop
+
+for (let i = 1; i <= 5; i++) {
+   console.log("apna college"); (* executed 5 times)
+
+}
+
+Infinite Loop
+
+A loop that never ends.
+
+while Loop
+
+while(condition){
+   //do some work
+}
+
+do-while Loop (* will run at least one time means the first time the loop is ran)
+
+do {
+
+   //do some work
+
+} while(condition);
+
+for-of Loop
+--> helps us to loop Strings and Array 
+--> do not need to put updation like i++ or the starting value like i=1 like in for loop
+--> works same as for loop for str in python
+for (let var of strVar){
+
+    // do some work
+
+}
+
+for-in Loop
+--> helps to loop objects
+
+for(let key in objVar){
+
+   //do some work
+
+}
+
+STRING in JS
+
+. Create String
+--> let str = "Hiten Ranjan"
+
+.String Length
+--> str.length
+
+.String Indices
+--> str[0],str[1],str[2]
+
+.TEMPLATE LITERALS IN JS
+--> A way to have embedded expressions in strings
+--> It also helps us to write the console.log part of object more easily like:
+   
+   console.log("the cost of",obj.item,"is",obj.price,"rupees")//this is the lengthy way but
+
+   output=`the cost of ${obj.items} is ${obj.price} rupees`
+   console.log(output)
+   
+--> This process is called String Interpolation
+--> This is to create strings by doing substitution of placeholders
+
+`string text ${expression} string text`
+
+
+
+if we write ${1+2+3} then first the value is calculated then it is converted into string
+
+ESCAPE CHARACTERS (\n)--> for next line like python
+
+--> STRING METHODS IN JS
+
+.str.toUpperCase()
+
+.str.toLowerCase()
+
+.str.trim() //removes whitespaces
+
+--> these method generates new value and do not change the original string
+
+String Methods IN JS (strings are immutable any change in strings will give a new value and will be stored in new variable)
+
+let str = "IloveJs";
+str[0]='S'
+console.log(str)//will print the original string no change
+//to change we will use replace function.
+
+.str.slice(start,end?)//returns part of string
+
+.str1.concat(str2)//joins str2 with str1
+
+.str.replace(searchVal,newVal)
+--> in this there is replaceAll function in which it replaces all the matching letter with the given value.
+
+.str.charAt(index)
+
+.ARRAYS
+
+--> Create Arrays
+   . let marks=[97,82,75,64,36]
+     console.log(marks)
+
+--> Array Indices
+   . marks[0],marks[1]
+
+--> Looping Over Arrays
+
+for(let indx=0; indx<heroes.length; indx++){
+    console.log(heroes[indx])
+}
+
+--> Array Methods
+
+. Push() : add to end
+. Pop() : delete from the end and return
+. toString() : converts array to string
+. concat() : joins multiple arrays and return result
+. unshift() : add to start
+. shift() : delete from start and return
+. slice() : returns a piece of the array
+
+      slice(startindex,endindex)
+
+. splice() : change original array (add,remove,replace)
+
+        splice(startindex,delCount,newEl1...)
+
+.FUNCTIONS IN JS
+
+-->Block of code that performs a specific task, can be invoked whenever needed.
+
+.Function Definition
+ 
+ function functionName(){
+
+    //do some work
+
+}
+
+ function functionName(param1,param2...){
+ 
+  //do some work
+
+}
+
+.Function Call
+
+  functionName();
+
+--> after return statement no code is executed . Its the last line of the block of code.
+--> functions parameter are like local variable of the function (block scope).
+
+. Arrow Functions (Part of Modern JS)
+--> Compact way of writing a function
+
+const functionName = (param1,param2...) => {
+ 
+  //do some work
+
+}
+
+const sum = (a,b) => {
+ 
+ return a+b;
+
+}
+
+. forEach Loop in Arrays
+
+arr.forEach(callBackFunction)
+
+CallbackFunction : Here , it is a function to execute for each element in the array
+
+*A callback is a function passed as an argument to another function.
+
+arr.forEach((val) => {
+  
+console.log(val);
+
+})
+
+--> callback function have three parameter that are value,index,array
+                                                    item ,position
+
+. Higher Order Function (important)
+--> Functions that either take another function as parameter inside them or return another function as their output .
+
+.Some More Array Methods
+. MAP
+
+Creates a new array with the results of some operation. The value its callback returns are used to form new array.
+
+arr.map(callbackFnx(value,index,array))
+
+let newArr = arr.map((val) => {
+  
+   return val*2;
+
+})
+
+. FILTER
+--> Creates a new array of elements that give true for a condition/filter.
+Eg: all even elements
+
+let newarr = arr.filter( (val) =>{
+
+   return val % 2 === 0;
+
+});
+
+. REDUCE
+--> Performs some operations and reduce the array to a single value. It returns that single value.
+
+const array1 = [1,2,3,4];
+
+//0+1+2+3+4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (accumulator,currentvalue) => accumulator + currentValue,
+   initialValue,
+);
+console.log(sumWithInitial);
+// Expected output: 10
+
+. CONNECTION WITH HTML
+
+--> <style> tag connects HTML with CSS
+--> <script> tag connects HTML with JS
+
+.Writing JS,CSS,HTML in different files  
+.increases readability of the code is
+.modularity means ek code ka tukda banake likhna
+.browser caching means loading time is increased
+
+.Window Object
+--> The window object represents an open window in a browser. It is browser's object(not java script's) & is automatically created by browser.
+
+--> It is global object with lots of properties and methods.
+
+What is DOM ?
+When a web page is loaded, browser creates a Document Object Model(DOM) of the page.
+
+--> whenever we have to print window object we use console.dir().
+
+console.log()-->print
+console.dir()-->document-->properties, method print karta hai
+(this itself also a part of window object)
+
+--> window mein jo document ya uske jase jitney bhi parts hain windw object mein usko model bolte hain thats why its called DOM.
+
+--> Ja ham apni script ko body se pahale load kar lete hain to DOM element accessable nahi hote ha code ke andar(means when we write script tag in head tag)
+
+. DOM Manipulation
+
+. Selecting with Id   (Id represented by #)
+--> document.getElementById("myId")
+--> when an Id element do not exist it will give null as output.
+
+. Selecting with Class  (Class represented by .(dot))
+--> document.getElementsByClassName("myClass")-->html collection array
+--> when any class element does not exist it will give empty html collection as output.
+
+. Selecting with Tag
+--> document.getElementsByTagName("p")
+
+. Query Selector
+
+--> document.querySelector("myId/myClass/tag")
+    //returns first element
+
+-->document.querySelectorAll("myId/myClass/tag")
+   //returns a Nodelist
+
+-->always write class with a dot and Id with a # in query selector
+
+
+. Properties
+.tagName : returns tag for element nodes
+.innerText : returns the text content of the elements and all its children
+.innerHTML : returns the plain text or HTML contents in the element
+.textContent : returns textual content even for hidden elements
+
+
+* (...args is called the rest operator when defining a function. It means "collect all arguments passed into this function into an array named args").
+

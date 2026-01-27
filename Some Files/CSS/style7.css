@@ -1,0 +1,36 @@
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    display: flex;
+    padding: 0 23px;
+    list-style: none;
+    color: white;
+}
+
+/* .box1{
+    float: left;
+    margin: 0 23px 0 23px;
+}
+
+.box2{
+    float: left;
+    margin: 0 23px 0 23px;
+}
+
+.box3{
+    float: left;
+    margin: 0 23px 0 23px;
+}
+
+.box4{
+    margin: 0 29px 0 29px;
+} */

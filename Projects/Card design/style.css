@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  margin: 40px;
+  padding: 33px;
+  background-color: rgba(212, 220, 227);
+  height: 600px;
+  width: 450px;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  margin: 1px;
+  padding: 1px;
+  height: 88%;
+  width: 80%;
+  border-radius: 20px;
+  background-color: rgb(230,242,242);
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+
+.card-main{
+    margin: 1px;
+    padding: 1px;
+    width: 319px;
+    height: 210px;
+    position: absolute;
+    top: 20%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+img{
+    width: calc(100% + 3%);
+    height: calc(100% + 10%);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ .text{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    margin: 20px;
+    margin-left: 10px;
+    gap: 30px;
+ }
+
+ .Nature{
+    border: 2px solid grey;
+    color: rgb(75, 75, 75);
+    border-radius: 20px;
+    padding: 3px;
+    top: 50%;
+    bottom: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ .Lake{
+    border: 2px solid grey;
+    color: rgb(75, 75, 75);
+    border-radius: 20px;
+    padding: 3px;
+    top: 50%;
+    bottom: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+h2{
+    margin: 20px 20px 20px 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+    color: grey;
+}
+
+ .content{
+    text-align: center;
+ }
+
+.btn{
+    border: 0;
+    border-radius: 20px;
+    font-weight: 760;
+    color: #00b3ff;
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(194, 246, 252);
+}

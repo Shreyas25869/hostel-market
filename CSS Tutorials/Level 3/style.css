@@ -1,0 +1,54 @@
+/* #box1{
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    font-size: 10px;
+}
+
+#box2{
+    /* height: 50px; */
+    /* width: 30%;
+    background-color: yellow;
+    margin-left: 10%;
+    font-size: 2em;
+    width: 5rem; */
+    /* height: 100vh; 
+}*/
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+/* #box1{
+    position: static;
+}
+
+#box2{
+    position: relative;
+    top: -20px;
+    left: -25px;
+    z-index: 1;
+}
+
+#box3{
+    /* position: absolute;  */
+    /* position: sticky;
+    top: 0px;
+    left: 20px;
+}
+
+#box4{
+    position: fixed;
+    top: 0px;
+    z-index: -5;
+} */ 
+
+#box1{
+    background-image: url(cat_photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

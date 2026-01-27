@@ -1,0 +1,67 @@
+
+  /* div{
+    height: 100px;
+    background-color: pink;
+    width: 100px;
+    border: 2px solid brown; */
+    /* border-radius: 15px; */
+    /* for making cicle --> */
+    /* border-radius: 50%; */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: brown; */
+    /* text-align: right; */
+    /* padding-left: 25px; */
+    /* padding: 25px; */
+    /* padding: 1px 2px 3px 4px;
+} */
+
+/* h1{
+    width: 200px;
+    height: 50px;
+    background-color: aquamarine;
+    /* border-width: 3px;
+    border-style: dashed;
+    border-color: black; 
+    border: 3px dashed black;
+    text-align: center;
+} */
+
+/* div{
+    background-color: pink;
+    display: inline;
+} */
+
+div{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+}
+
+/* #one{
+    visibility: hidden;
+    background-color: blue;
+}
+
+#two{
+    display: none;
+    background-color: green;
+}
+
+#three{
+    background-color: red;
+} */
+
+#box1{
+    background-color: rgba(0,0,255,0.5);
+}
+
+#box2{
+    background-color: rgba(0,0,255,0.75);
+}
+
+#box3{
+    background-color: rgba(0,0,255,1);
+}

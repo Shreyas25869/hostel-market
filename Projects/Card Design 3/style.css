@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0e2136;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: #142d4a;
+    height: 500px;
+    aspect-ratio: 9/16;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card h2{
+    color: white;
+    z-index: 1;
+    font-size: 2em;
+}
+
+.card::before{
+    content: "";
+    width: 150px;
+    position: absolute;
+    background-image: linear-gradient(180deg,
+    rgb(0,183,255),rgb(255,48,255));
+    height: 180%;
+    animation: BGborder 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes BGborder{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    background-color: #0e2136;
+    inset: 5px;
+    border-radius: 15px;
+}

@@ -1,0 +1,26 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh; 
+    }
+
+@keyframes loder{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    border-left:4px solid black;
+    border-radius: 50%;
+    animation: loder 0.5s ease-in 0s infinite normal;
+}
